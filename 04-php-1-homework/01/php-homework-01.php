@@ -8,4 +8,8 @@
 	{
 		echo "po- golqmo ot 26";
 	}
+	if($a <= 64)
+	{
+		echo "po- malko ili ravbno na 64";
+	}
 ?>

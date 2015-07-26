@@ -9,7 +9,8 @@
 		echo "po- golqmo ot 26";
 	}
 	if($a <= 64)
-	{
+    {
+        // Red text
 		echo "po- malko ili ravbno na 64";
 	}
 	echo "<br />";

@@ -1,11 +1,4 @@
 <?php
-	for($num=1; $num <= 100; $num++)
+	for($a=1; $a <= 100; $a++)
 	{
-		echo "$num <br />";
-		$color1 = "blue";
-		$color2 = "green";
-		if($num % 2 == 2)
-		{
-			continue;
-		}
-			echo <div style="$color1" >
+		echo "$a <br />";

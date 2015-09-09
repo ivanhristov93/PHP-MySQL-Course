@@ -1,5 +1,6 @@
 <?php
-require_once(dirname(__FILE__).'/Person.php');
+// Before commiting test your code!
+require_once(dirname(__FILE__).'/person.php');
 
 $pencho = new Person("Пенчо", 13, "minavamstanka@abv.bg");
 $pencho->greet();

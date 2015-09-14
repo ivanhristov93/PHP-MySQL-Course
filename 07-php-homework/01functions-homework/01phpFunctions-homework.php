@@ -2,5 +2,5 @@
 	function calculateTriangleArea($a, $ha)
 	{
 		$s = $a * $ha / 2;
-		return $a;
+		return $s;
 	}

@@ -1,6 +1,6 @@
 <?php
-	function calculateTriangleArea($width, $height)
+	function calculateTriangleArea($a, $ha)
 	{
-		$area = $width * $height / 2;
-		return $area;
+		$s = $a * $ha / 2;
+		return $a;
 	}

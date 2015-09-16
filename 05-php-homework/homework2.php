@@ -1,17 +1,20 @@
 <?php
-	define("cols","4");
-	define("rows", "5");
-	echo constant("cols");
-	echo constant("rows");
+	define("COLS", 4);
+	define("ROWS", 5);
 
-	for ($cols=1; $cols<4; $cols++)
+
+	echo "<table border='1'>";
+	
+	
+	for($i=1; $i <= COLS; $i++ )
 	{
-		$result= $cols;
-		echo "$cols= $result";
-
-			for($rows=1; $rows<4; $rows++)
-			{
-				$result= $rows;
-				echo "$rows= $result";	
-			}
+		echo "<tr>";
+		for($l=1; $l <= ROWS; $l++ )
+		{
+			echo "<td>$i, $l</td>";
+			
+		}
+		echo "</tr>";
 	}
+	echo "</table>";
+?>

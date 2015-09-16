@@ -1,17 +1,29 @@
 <?php
-	for($a=1; $a <= 100; $a++)
+	for($i=0; $i<101; $i++)
+{
+	
+	if ($i % 2 == 0 && $i<101)
 	{
-		echo "$a <br />";
-	}
-	if($a % 2 == 2)
+		if ($i != 0 && $i % 7 == 0 )
+		{
+			echo "<span style='background-color:rgb(66,105,233);'>$i BINGO!!!<br></span>";
+		}
+		else 
+			{
+				echo "<span style='background-color:rgb(66,105,233);'>$i<br></span>";
+			} 
+	} 
+	if ($i % 2 == 1)
 	{
-		echo "<span style=\"background-color:blue;\"> $a </span>";
+		if ($i != 0 && $i % 7 == 0 )
+		{
+			echo "<span style='background-color:rgb(35,239,82);'>$i BINGO!!!<br></span>";
+		}
+		else 
+			{
+				echo "<span style='background-color:rgb(35,239,82);'>$i<br></span>";
+			} 
 	}
-	if($a % 2 == 0)
-	{
-		echo "<span style=\"background-color:green;\"> $a </span>";
-	}
-	if($a % 7 == 7)
-	{
-		echo "<span style=\"background-color:blue;\"> bingo </span>";
-	}
+	
+}
+?>

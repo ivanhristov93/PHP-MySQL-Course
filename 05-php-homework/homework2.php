@@ -9,9 +9,9 @@
 	for($i=1; $i <= COLS; $i++ )
 	{
 		echo "<tr>";
-		for($l=1; $l <= ROWS; $l++ )
+		for($a=1; $a <= ROWS; $a++ )
 		{
-			echo "<td>$i, $l</td>";
+			echo "<td>$i, $a</td>";
 			
 		}
 		echo "</tr>";

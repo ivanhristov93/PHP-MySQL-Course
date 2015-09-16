@@ -1,13 +1,70 @@
-<?php
-	$asdArr = array("name" => "Facebook", "web-site" => "https://www.facebook.com/");
-			array("name" => "Zamunda", "web-site" => "http://www.zamunda.net/");
-			array("name" => "Github", "web-site" => "https://github.com");
-			array("name" => "YouTube", "web-site" => "https://www.youtube.com/");
-			array("name" => "ABV", "web-site" => "http://www.abv.bg/");
+<!DOCTYPE html>
+<html>
+<body>
+<table border="1">
+	<?php
+		$array = array(
+				"name" => "Facebook", "web-site" => "https://www.facebook.com"
+				);
+
     // Виждаме само първия а не вскички.
+		foreach ($array as $key => $value) {
+		echo "<tr>";
+		echo "<td><strong>" . $key . "</strong></td>";
+        echo "<td>" . $value . "</td>";
+		echo "</tr>";
+    	}
 
-            echo "<dt> Ime na kompaniqta: </dt>";
-		echo "<dd>" . $asdArr["name"]. "</dd>";
+    	$array = array(
+				"name" => "GIT", "web-site" => "https://www.github.com"
+				);
 
-		echo "<dt> Site: </dt>";
-		echo "<dd>" . $asdArr["web-site"] . "</dd>";
+    // Виждаме само първия а не вскички.
+		foreach ($array as $key => $value) {
+		echo "<tr>";
+		echo "<td><strong>" . $key . "</strong></td>";
+        echo "<td>" . $value . "</td>";
+		echo "</tr>";
+    	}
+
+		$array = array(
+				"name" => "ABV", "web-site" => "https://www.abv.bg"
+				);
+
+    // Виждаме само първия а не вскички.
+		foreach ($array as $key => $value) {
+		echo "<tr>";
+		echo "<td><strong>" . $key . "</strong></td>";
+        echo "<td>" . $value . "</td>";
+		echo "</tr>";
+    	}		
+
+    	$array = array(
+				"name" => "Zamunda", "web-site" => "https://www.zamunda.net"
+				);
+
+    // Виждаме само първия а не вскички.
+		foreach ($array as $key => $value) {
+		echo "<tr>";
+		echo "<td><strong>" . $key . "</strong></td>";
+        echo "<td>" . $value . "</td>";
+		echo "</tr>";
+    	}
+
+    	$array = array(
+				"name" => "YouTube", "web-site" => "https://www.youtube.com"
+				);
+
+    // Виждаме само първия а не вскички.
+		foreach ($array as $key => $value) {
+		echo "<tr>";
+		echo "<td><strong>" . $key . "</strong></td>";
+        echo "<td>" . $value . "</td>";
+		echo "</tr>";
+    	}
+
+	?>
+</table>
+</body>
+</html>
+

@@ -8,6 +8,7 @@
 				);
 
     // Виждаме само първия а не вскички.
+		//Както и да го въртя не се получи и само това измислих, колкото и грозно да е.
 		foreach ($array as $key => $value) {
 		echo "<tr>";
 		echo "<td><strong>" . $key . "</strong></td>";
@@ -19,7 +20,6 @@
 				"name" => "GIT", "web-site" => "https://www.github.com"
 				);
 
-    // Виждаме само първия а не вскички.
 		foreach ($array as $key => $value) {
 		echo "<tr>";
 		echo "<td><strong>" . $key . "</strong></td>";
@@ -31,7 +31,6 @@
 				"name" => "ABV", "web-site" => "https://www.abv.bg"
 				);
 
-    // Виждаме само първия а не вскички.
 		foreach ($array as $key => $value) {
 		echo "<tr>";
 		echo "<td><strong>" . $key . "</strong></td>";
@@ -43,7 +42,6 @@
 				"name" => "Zamunda", "web-site" => "https://www.zamunda.net"
 				);
 
-    // Виждаме само първия а не вскички.
 		foreach ($array as $key => $value) {
 		echo "<tr>";
 		echo "<td><strong>" . $key . "</strong></td>";
@@ -55,7 +53,6 @@
 				"name" => "YouTube", "web-site" => "https://www.youtube.com"
 				);
 
-    // Виждаме само първия а не вскички.
 		foreach ($array as $key => $value) {
 		echo "<tr>";
 		echo "<td><strong>" . $key . "</strong></td>";

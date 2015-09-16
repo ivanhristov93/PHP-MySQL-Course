@@ -25,7 +25,7 @@
 			function Calculate($first, $second)
 			{
 				$result=($first+$second);
-				print_r($result	);
+				return ($result	);
 			}
 		?>		
 </body>

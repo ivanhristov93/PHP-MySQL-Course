@@ -1,24 +1,20 @@
-<?php
+<?php 
 
 require_once(dirname(__FILE__).'/Employee.php');
 
-class Policeman extends Employee
-{
-
-    protected $PoliceRank;
-
-    public function __construct($PoliceRank)
+class Policeman extends Employee {
+    
+    protected $rank;
+    
+    public function __construct($hoursPerMonth, $money, $rank)
     {
-        $this->PoliceRank = $PoliceRank;
+        parent::__construct($hoursPerMonth, $money);
+        $this->rank = $rank;
     }
-
-    public function getPoliceRank()
+    
+    public function Rank()
     {
-        return $this->PoliceRank;
-    }
-    public function setPolicerank()
-    {
-        $this->PoliceRank = $PoliceRank;
+        echo "Полицаят е с ранк: $this->rank <br /> <br />";
     }
 }
 ?>

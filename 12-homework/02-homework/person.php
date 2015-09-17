@@ -1,23 +1,53 @@
-<?php
-class Person
-{
-    var $name;
-    var $age;
-    var $email;
+<?php 
 
-    public function __construct($name, $age, $email)
+class Person 
+{
+
+   var $name;
+   var $age;
+   var $mail;
+
+    public function __construct($name, $age, $mail)
     {
-        $this->name = $name;
-        $this->age = $age;
-        $this->email = $email;
+        
+        if (mb_strlen($name) > 3)
+        {
+            $this->name = $name;
+        }
+        else
+        {
+            echo "грешно въведено име<br/>";
+        }
+
+        if ($age > 0 && $age < 200)
+        { 
+            $this->age = $age;
+         }
+        else
+        {
+            echo "грешно въвеждане на възраст<br/>";
+        }
+        
+        if (mb_strlen($mail) > 3)
+        { 
+            $this->mail = $mail;
+         }
+        else
+        {
+            echo "грешно въведен mail<br/>";
+        } 
     }
 
-    function greet()
+    function details()
     {
-        echo "<br />";
-        echo "<strong>Здравей! Казвам се" . $this->name . ".</strong><br />";
-        echo "<strong>Аз съм на" . $this->age . " години. </strong><br />";
-        echo "<strong>Имейлът ми е" . $this->email . ".</strong><br />";
+        echo "<div>";
+        echo "<strong>$this->name </strong><br />";
+        echo "<strong>$this->age</strong><br />";
+        echo "<strong>$this->mail</strong><br />";
+        echo "</div>";
+        
+        echo "<br/> <br/>";
     }
 }
+
 ?>

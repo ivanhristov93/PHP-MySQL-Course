@@ -1,31 +1,19 @@
-<?php
-
-class Employee
-{
-
-    protected $HoursWorkPerMonth;
-    protected $MonthlySalary;
+<?php 
+class Employee {
     
-
-    // This property should be in Police man only.
-    protected $PoliceRank;
+    protected $hoursPerMonth;
+    protected $money;
     
-    protected $Night;
-    protected $AllDay;
-
-    public function __construct($HoursWorkPerMonth, $MonthlySalary)
+    public function __construct($hoursPerMonth, $money)
     {
-        $this->HoursWorkPerMonth = $HoursWorkPerMonth;
-        $this->MonthlySalary = $MonthlySalary;
+        $this->hoursPerMonth = $hoursPerMonth;
+        $this->money = $money;
     }
-    // This function is better to be in Doctor and in Policeman
-    public function greet()
+    
+    public function HoursMoney()
     {
-        echo "$this->HoursWorkPerMonth <br />";
-        echo "$this->MonthlySalary<br />";
-        echo "$this->PoliceRank<br />";
-        echo "$this->Night<br />";
-        echo "$this->AllDay<br />";
+        echo "При $this->hoursPerMonth работни часа на месец<br />";
+        echo "Получава $this->money лв. заплата.<br />";
     }
 }
 ?>

@@ -5,15 +5,17 @@
 </head>
 <body>
 	<form action="response.php" method = "POST" >
-        Име: <input type="text" name="userName" />
+        Име: 
+        <input type="text" name="userName" />
     <br />
-        Стара парола: <input type="password" name="oldPass" />
+        Стара парола: 
+        <input type="password" name="oldPass" />
     <br />
         Нова парола:
-        <input type="password" name="pass1" />
+        <input type="password" name="newPass" />
     <br />
-        Въведи отново новата парола:
-        <input type="password" name="pass2" />
+        Повтори паролата:
+        <input type="password" name="newPass" />
     <br />
         <input type="submit" value="Изпрати" />
        

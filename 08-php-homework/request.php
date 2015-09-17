@@ -2,7 +2,6 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Forms homework 1</title>
 </head>
 <body>
 	<form action="response.php" method = "POST" >

@@ -1,16 +1,24 @@
-<form action="response.php?submit=true&test=2" method="POST">
-		Потребителско име: 
-		<input type="text" name="username" />
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Forms homework 1</title>
+</head>
+<body>
+	<form action="response.php" method = "POST" >
+        Име: <input type="text" name="userName" />
     <br />
-		Стара парола:
-		<input type="password" name="oldPass" />
+        Стара парола: <input type="password" name="oldPass" />
     <br />
-		Нова парола:
-		<input type="password" name="newPass" / >
-	<br />	
-		Повторете паролата:
-		<input type="password" name="rePass" />
-	<br />
-		<input type="submit" value="Изпрати" />
-	<br />
-</form>	
+        Нова парола:
+        <input type="password" name="pass1" />
+    <br />
+        Въведи отново новата парола:
+        <input type="password" name="pass2" />
+    <br />
+        <input type="submit" value="Изпрати" />
+       
+</form>
+
+</body>
+</html>
